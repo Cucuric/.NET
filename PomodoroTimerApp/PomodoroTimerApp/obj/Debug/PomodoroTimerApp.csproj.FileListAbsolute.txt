@@ -1,0 +1,10 @@
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\bin\Debug\PomodoroTimerApp.exe.config
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\bin\Debug\PomodoroTimerApp.exe
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\bin\Debug\PomodoroTimerApp.pdb
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.csproj.AssemblyReference.cache
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.Properties.Resources.resources
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.csproj.GenerateResource.cache
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.csproj.CoreCompileInputs.cache
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.exe
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.pdb
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.fInput.resources
