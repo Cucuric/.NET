@@ -7,4 +7,4 @@ C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\
 C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.csproj.CoreCompileInputs.cache
 C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.exe
 C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.pdb
-C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.fInput.resources
+C:\Users\cucur\OneDrive\Dokumenti\GitHub\.NET\PomodoroTimerApp\PomodoroTimerApp\obj\Debug\PomodoroTimerApp.FormPomodoroApp.resources
