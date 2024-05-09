@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPomodoroApp));
             this.btnStart = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
@@ -44,9 +45,12 @@
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.Lime;
+            this.btnStart.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStart.Location = new System.Drawing.Point(328, 187);
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(346, 192);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(191, 64);
             this.btnStart.TabIndex = 0;
@@ -56,13 +60,15 @@
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.Red;
+            this.btnReset.BackColor = System.Drawing.Color.OrangeRed;
             this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Location = new System.Drawing.Point(328, 290);
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(346, 290);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(191, 64);
-            this.btnReset.TabIndex = 2;
+            this.btnReset.TabIndex = 0;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -76,7 +82,7 @@
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.Location = new System.Drawing.Point(12, 19);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(507, 143);
+            this.lblTime.Size = new System.Drawing.Size(525, 143);
             this.lblTime.TabIndex = 3;
             this.lblTime.Text = "Set timer";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,9 +144,9 @@
             this.gbSetup.Controls.Add(this.tbWork);
             this.gbSetup.Controls.Add(this.lblRest);
             this.gbSetup.Controls.Add(this.lblWork);
-            this.gbSetup.Location = new System.Drawing.Point(12, 181);
+            this.gbSetup.Location = new System.Drawing.Point(12, 185);
             this.gbSetup.Name = "gbSetup";
-            this.gbSetup.Size = new System.Drawing.Size(287, 173);
+            this.gbSetup.Size = new System.Drawing.Size(287, 169);
             this.gbSetup.TabIndex = 9;
             this.gbSetup.TabStop = false;
             this.gbSetup.Text = "Timer setup";
@@ -149,13 +155,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(562, 367);
             this.Controls.Add(this.gbSetup);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnStart);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(580, 414);
+            this.MinimumSize = new System.Drawing.Size(580, 414);
             this.Name = "FormPomodoroApp";
-            this.Text = "Form1";
+            this.Text = "Pomodoro app";
             this.gbSetup.ResumeLayout(false);
             this.gbSetup.PerformLayout();
             this.ResumeLayout(false);

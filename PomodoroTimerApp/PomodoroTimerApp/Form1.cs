@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.PerformanceData;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,31 +13,41 @@ namespace PomodoroTimerApp
 {
     public partial class FormPomodoroApp : Form
     {
-        private int totalSeconds; //Varijable
+        private int totalSeconds;
         private bool working;
         private bool repeat;
+        int numOfRepeats = 0;
 
-        public FormPomodoroApp() //Konstruktor
+        public FormPomodoroApp()
         {
             InitializeComponent();
-            totalSeconds = 0;
+            totalSeconds = 1;
             working = false;
-            repeat = false;
+            repeat = true;
         }
 
-        //Metode
         private void UpdateClockLabel()
         {
             int minutes = totalSeconds / 60;
             int seconds = totalSeconds % 60;
-            lblTime.Text =  string.Format("{0}:{1}",minutes,seconds);
+            string formattedTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+            lblTime.Text = formattedTime;
         }
 
         private void UpdateClock() {
             var workTime = int.Parse(tbWork.Text) * 60;
             var restTime = int.Parse(tbRest.Text) * 60;
 
+            numOfRepeats++;
+
+            if (numOfRepeats >= workTime + restTime && repeat)
+            {
+                numOfRepeats = 0;
+                ResetClock();
+            }
+
             totalSeconds--;
+
 
             if (totalSeconds <= 0)
             {
@@ -48,6 +59,7 @@ namespace PomodoroTimerApp
                 {
                     totalSeconds = workTime;
                 }
+
                 working = !working;
             }
         }
@@ -57,12 +69,13 @@ namespace PomodoroTimerApp
             timerClock.Enabled = false;
             totalSeconds = 0;
             working = false;
+            lblTime.Text = "Set timer";
         }
 
         private void timerClock_Tick(object sender, EventArgs e)
         {
             UpdateClock();
-            UpdateClockLabel();
+            UpdateClockLabel(); 
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -73,12 +86,13 @@ namespace PomodoroTimerApp
         private void btnReset_Click(object sender, EventArgs e)
         {
             ResetClock();
-            lblTime.Text = "Set timer";
         }
 
         private void cbRepeat_CheckedChanged(object sender, EventArgs e)
         {
             repeat = !repeat;
         }
+
+
     }
 }
